@@ -85,7 +85,7 @@ After configuring the VM, create a Log Analytics workspace in Azure. Follow thes
 
    ![API Key](https://github.com/ClaytoneJ/Azure-Sentinel-SIEM-Honeypot/assets/119146054/e714a5a9-8eb6-42d3-a068-a5d52099cbce)
 
-8. Open PowerShell ISE in the VM, create a new file, and paste the PowerShell script. Replace the value of $API_KEY with the API key you obtained earlier.
+8. Open PowerShell ISE in the VM, create a new file, and paste the Custom_Security_Log_Exporter.ps1 PowerShell script. Replace the value of $API_KEY with the API key you obtained earlier.
 
    ![Replace API Key](https://github.com/ClaytoneJ/Azure-Sentinel-SIEM-Honeypot/assets/119146054/3c63aa38-7723-4c87-8f2f-d210a63e8925)
 
@@ -124,7 +124,7 @@ To view live attacks on the map in your Azure Sentinel setup, follow these steps
 
    ![Edit Workbook](https://github.com/ClaytoneJ/Azure-Sentinel-SIEM-Honeypot/assets/119146054/12ec6a8a-4755-42ca-b50a-bc07427b9129)
 
-3. Add a query to the workbook to display live attack data on a map.
+3. Add this query to the workbook to display live attack data on a map:
 
    ```
    FAILED_RDP_WITH_GEO_CL 
